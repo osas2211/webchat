@@ -12,7 +12,7 @@ export const Join = () => {
   const navigate = useNavigate()
   const onSubmit = (event: FormEvent) => {
     event.preventDefault()
-    dispatch({ type: JoinChat.type, payload: { userID } })
+    dispatch({ type: JoinChat.type, payload: { userID: userID.toLowerCase() } })
     navigate("/chat-room")
   }
   return (
