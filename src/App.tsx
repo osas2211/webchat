@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { PrivateRoutes } from "./app/PrivateRoutes"
@@ -6,6 +6,10 @@ import { Join } from "./app/pages/Join"
 import { ChatRoom } from "./app/pages/chatRoom"
 
 function App() {
+  useEffect(() => {
+    if (localStorage.getItem("messages") === undefined)
+      localStorage.setItem("messages", JSON.stringify([]))
+  }, [])
   return (
     <div className="app">
       <Router>

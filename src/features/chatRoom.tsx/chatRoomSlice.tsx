@@ -8,7 +8,10 @@ export interface MessageObject {
 
 export const chatRoom = createSlice({
   name: "chatRoom",
-  initialState: [] as Array<MessageObject>,
+  //initialState is set to the messages already stored in Local Storage
+  initialState: JSON.parse(
+    localStorage.getItem("messages") as string
+  ) as Array<MessageObject>,
   reducers: {
     sendMesssage: (state, action) => {
       const { userID, message }: MessageObject = action.payload
