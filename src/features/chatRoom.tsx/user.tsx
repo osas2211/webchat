@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 export const user = createSlice({
   name: "user",
-  initialState: { userID: null, chats: [""] },
+  initialState: { userID: null as string | null, chats: [""] },
   reducers: {
     Join: (state, action) => {
       const { userID } = action.payload

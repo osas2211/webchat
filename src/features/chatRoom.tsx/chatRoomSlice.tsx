@@ -4,6 +4,7 @@ import { createSlice } from "@reduxjs/toolkit"
 export interface MessageObject {
   userID: string
   message: string
+  time: string
 }
 
 export const chatRoom = createSlice({
@@ -14,8 +15,8 @@ export const chatRoom = createSlice({
   ) as Array<MessageObject>,
   reducers: {
     sendMesssage: (state, action) => {
-      const { userID, message }: MessageObject = action.payload
-      state.push({ userID, message })
+      const { userID, message, time }: MessageObject = action.payload
+      state.push({ userID, message, time })
       localStorage.setItem("messages", JSON.stringify(state))
     },
   },

@@ -7,7 +7,7 @@ import { ChatRoom } from "./app/pages/chatRoom"
 
 function App() {
   useEffect(() => {
-    if (localStorage.getItem("messages") === undefined)
+    if (!localStorage.getItem("messages"))
       localStorage.setItem("messages", JSON.stringify([]))
   }, [])
   return (
