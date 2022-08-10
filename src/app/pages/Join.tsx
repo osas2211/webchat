@@ -7,7 +7,7 @@ import { Join as JoinChat } from "../../features/chatRoom.tsx/user"
 import { useNavigate } from "react-router-dom"
 
 export const Join = () => {
-  const [userID, setUserID] = useState<string | null>(null)
+  const [userID, setUserID] = useState<string>("")
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const onSubmit = (event: FormEvent) => {
