@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-## WEB CHAT APPLICATION
+# WEB CHAT APPLICATION
 
 An real time enabled in-browser chat room where each tab is a different user.
 
