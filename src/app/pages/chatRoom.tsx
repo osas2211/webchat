@@ -4,7 +4,12 @@ import { Logout, Message, Send } from "@mui/icons-material"
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "../store"
 import { LogOut } from "../../features/chatRoom.tsx/user"
-import { MessageObject } from "../../features/chatRoom.tsx/chatRoomSlice"
+
+export interface MessageObject {
+  userID: string
+  message: string
+  time: string
+}
 
 export const ChatRoom = () => {
   const dispatch = useDispatch()
