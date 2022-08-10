@@ -17,7 +17,7 @@ img{
 
 .chat-room{
   position: relative;
-  height: 120vh;
+  
   width: 90%;
   margin: auto;
 }
@@ -30,4 +30,43 @@ img{
   align-items: center;
   width: 100%;
   padding: 1rem 0;
+  background-color: #fbffff;
+}
+
+.chat-room_sendMessage{
+  position: fixed;
+  bottom: 0rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(227, 238, 234);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.349);
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 7rem 0;
+}
+
+.message-box{
+  padding: 0.6rem;
+  display: block;
+  background-color: rgb(15, 54, 80);
+  width: 70%;
+  color: #fff;
+  margin: 0.5rem 0;
+  align-self: start;
+}
+.user{
+  align-self: end;
+  background-color: rgb(64, 133, 118);
+}
+
+.time{
+  margin-top: 1rem;
+  font-size: 0.8rem;
 }

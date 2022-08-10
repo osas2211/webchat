@@ -23,6 +23,88 @@ export const ChatRoom = () => {
           Sign Out
         </Button>
       </header>
+
+      <Box className="messages">
+        <div className="message-box">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+        </div>
+        <div className="message-box user">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+          <div className="time">
+            <span>{Date()}</span>
+          </div>
+        </div>
+        <div className="message-box">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+        </div>
+        <div className="message-box">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+        </div>
+        <div className="message-box user">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+          <div className="time">
+            <span style={{ display: "block" }}>@osas2211</span>
+            <span>{Date()}</span>
+          </div>
+        </div>
+        <div className="message-box">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+        </div>
+        <div className="message-box">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+        </div>
+        <div className="message-box user">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+          <div className="time">
+            <span>{Date()}</span>
+          </div>
+        </div>
+        <div className="message-box">
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in,
+            amet exercitationem minima aut maxime provident cumque{" "}
+          </Typography>
+        </div>
+      </Box>
+
+      <Box className="chat-room_sendMessage">
+        <TextField
+          placeholder="Enter Message"
+          sx={{ width: "90%" }}
+          multiline
+        />
+        <Button
+          startIcon={<Send />}
+          sx={{ marginX: "3rem" }}
+          variant={"contained"}
+        >
+          send
+        </Button>
+      </Box>
     </Box>
   )
 }
